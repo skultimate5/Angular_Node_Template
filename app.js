@@ -3,8 +3,8 @@ var bodyParser = require('body-parser');
 var port = process.env.port || 3000;
 var app = express();
 
-//require('dotenv').config(); // loads process.env environment variables -- should look into using this
-
+require('dotenv').config(); // loads process.env environment variables 
+//usage is var dbHost = process.env.DB_HOST
 
 // configuration =================
 app.use(bodyParser.urlencoded({
